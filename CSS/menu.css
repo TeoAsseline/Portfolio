@@ -1,61 +1,102 @@
+.menuresponsive {
+  border: thick double #eee;
 
-    /* Styles pour le menu */
-    .menu {
-        background-color: blue;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
+  nav {
+    background: #EBF2FA;
+    width: 100%;
+  }
+
+  a img {
+    padding: 5px;
+    padding-left: 20px;
+  }
+
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+
+  nav ul li a {
+    color: #06668C;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  a.active,
+  a:hover {
+    color: #679436 !important;
+    transition: .5s;
+  }
+
+  .checkbtn {
+    font-size: 30px;
+    color: #06668C;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check {
+    display: none;
+  }
+
+  @media (max-width: 952px) {
+    label.logo {
+      font-size: 30px;
+      padding-left: 50px;
     }
 
-    .logo img {
-        width: 50px;
-        height: 50px;
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 858px) {
+    .checkbtn {
+      display: block;
     }
 
-    .menu-nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    ul {
+      border-top: solid 3px #06668C;
+      border-bottom: solid 3px #eee;
+      z-index: 1;
+      position: fixed;
+      width: 100%;
+      background: #EBF2FA;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
     }
 
-    .menu-nav ul li {
-        margin-right: 10px;
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
     }
 
-    .menu-nav ul li a {
-        color: white;
-        text-decoration: none;
+    nav ul li a {
+      font-size: 20px;
     }
 
-    /* Styles pour la version mobile */
-    @media (max-width: 768px) {
-        .menu {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .menu-nav {
-            margin-top: 10px;
-        }
-
-        .menu-nav ul {
-            flex-direction: column;
-        }
-
-        .menu-nav ul li {
-            margin-bottom: 10px;
-        }
+    a.active,
+    a:hover {
+      color: #679436 !important;
+      transition: .5s;
     }
 
-    /* Styles pour les couleurs */
-    .logo {
-        background-color: green;
-        padding: 5px;
-        border-radius: 50%;
+    #check:checked~ul {
+      left: 0;
     }
-
-    .menu-nav ul li a {
-        color: white;
-    }
+  }
+}
