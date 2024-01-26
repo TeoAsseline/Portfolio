@@ -23,3 +23,15 @@ html,
 body {
     font-family: 'Mulish' !important;
 }
+
+main{
+    padding:10px;
+}
+
+.photo{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 2px #eee;
+}
