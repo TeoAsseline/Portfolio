@@ -25,12 +25,12 @@ body {
 }
 
 main{
-    padding:10px;
+    min-height: 465px;
 }
 
 .photo{
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     object-fit: cover;
     border-radius: 50%;
     border: solid 2px #eee;

@@ -1,30 +1,53 @@
 <main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Présentation / Pitch avec passions, photo et cv vidéo -->
-    <div class="presentationdiv">
-        <div>
+    <div class="presentationdiv" id="pagebase">
+        <div class="divinfo">
             <!-- Nom Prénom -->
             <h1>Téo Asseline</h1>
             <h2>Etudiant Informatique</h2>
             <!-- Ma Présentation -->
             <h1>Présentation</h1>
-            <p>Je m'appelle <strong>Yannick</strong> et je suis un <strong>développeur web</strong>.</p>
+            <p>Je suis une
+                personne sérieuse, créative et je sais
+                m'adapter. J'organise efficacement mon
+                travail. Grâce à mes études informatiques et
+                aux différents projets réalisés, je suis apte à
+                entrer dans le monde du travail.</p>
         </div>
         <div>
             <!-- Ma Photo -->
             <img class="photo" src="./IMG/phototeo.jpg" alt="Photo Téo Asseline">
         </div>
     </div>
-    <div class="presentationdiv">
+    <div class="presentationdiv" id="pagedessous">
+        <div class="divliens">
+            <a href="mailto:asselineteo@gmail.com" alt="asselineteo@gmail.com" title="asselineteo@gmail.com" class="lienbutton button-74">
+                <img class="logolien" src="./IMG/gmail.png"/>Me contacter par email</a>
+                <img id="scrollToBottom" class="logofleche" src="./IMG/flechebas.png"></img>
+            <a href="https://www.linkedin.com/in/teo-asseline" title="https://www.linkedin.com/in/teo-asseline" alt="https://www.linkedin.com/in/teo-asseline" class="lienbutton button-74">
+                <img class="logolien"src="./IMG/linkedin.png"/>Mon profil Linkedin</a>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $("#scrollToBottom").click(function() {
+                    $('html, body').animate({
+                        scrollTop: $(document).height() - $(window).height()
+                    }, 'slow');
+                });
+            });
+        </script>
         <div>
+            <h2>Présentation sous CV Vidéo</h2>
+        </div>
+        <div class="divvideo">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/rRQ7ecWcALg?si=1-9JFYKs1McKtqf9"
              title="YouTube video player" frameborder="0" 
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         <div>
             <!-- Mes Liens -->
-            <a href="mailto:asselineteo@gmail.com" alt="asselineteo@gmail.com">Me contacter par email</a>
-            <a href="www.linkedin.com/in/teo-asseline" alt="www.linkedin.com/in/teo-asseline">Mon Linkedin</a>
-            <a href="./FICHIER/CV_ASSELINE_TEO.pdf" download>Cliquez pour télécharger</a>
+            <a class="button-30" id="buttonCV" href="./FICHIER/CV_ASSELINE_TEO.pdf" download>Cliquez pour télécharger mon CV</a>
         </div>
     </div>
 </main>
