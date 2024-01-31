@@ -5,7 +5,7 @@ include './Page/Menu.html';
 // Vérifier le paramètre et inclure la page correspondante
 switch ($page) {
     case 'Contact':
-        include './Page/Contact.php';
+        include './Page/Contact.html';
         break;
     case 'Competences':
         include './Page/Competence.html';
