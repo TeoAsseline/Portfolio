@@ -7,6 +7,9 @@ switch ($page) {
     case 'Contact':
         include './Page/Contact.html';
         break;
+    case 'Parcours':
+        include './Page/Parcours.html';
+        break;
     case 'Competences':
         include './Page/Competence.html';
         break;
