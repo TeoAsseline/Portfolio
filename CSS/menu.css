@@ -1,5 +1,7 @@
 .menuresponsive {
   border: thick double #eee;
+  width:100%;
+  z-index: 1;
 
   nav {
     background: #EBF2FA;
