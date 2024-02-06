@@ -27,6 +27,7 @@ body {
 main{
     min-height: 465px;
     margin: 0 10% 0 10%;
+    margin-top: 110px;
 }
 
 .photo{

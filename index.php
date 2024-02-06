@@ -22,6 +22,4 @@ switch ($page) {
 }
 include './Page/Footer.html';
 ?>
-<!-- /* menu fixed 
-projet sous card et clic = tourne pour autre donnée 
-hoster sous git */ -->
+<!-- projet sous card et clic = tourne pour autre donnée -->
