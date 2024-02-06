@@ -22,4 +22,3 @@ switch ($page) {
 }
 include './Page/Footer.html';
 ?>
-<!-- projet sous card et clic = tourne pour autre donnée -->
