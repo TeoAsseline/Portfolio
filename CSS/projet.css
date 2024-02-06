@@ -8,6 +8,8 @@
     display: grid;
     padding: 10px;
     border: solid 2px #06668C;
+    height: 410px;
+    background: #EBF2FA;
 }
 
 .detailsprojet{
@@ -16,4 +18,9 @@
 
 .lienprojet{
     display: flex;
+}
+
+.logoflechedroite{
+    width: 10%;
+    margin-left: auto;
 }
