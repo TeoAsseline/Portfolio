@@ -6,7 +6,7 @@
             Explorez chaque projet pour une immersion rapide dans mes compétences et ma créativité.</p>
     </div>
     <div class="projets">
-        <div class="projet">
+        <div class="projet" id="projet1">
             <div class="frontprojet">
                 <h2>Application de gestionnaire de compétition Esport</h2>
                 <div style="border:solid 1px #679436;margin:15px 0px 15px 0px;height: 0px;"></div>
@@ -31,10 +31,16 @@
                     <li><span>Lien SGBD</span></li>
                     <li><span>Identifier les besoins d'un client</span></li>
                 </ul>
+                <article style="padding:5px;border-radius: 0px !important;border: solid 2px #505050 !important;background:white;">
+                    <div style="background:#757575;border:solid 3px #505050;margin-bottom:3px;"></div>
+                    <header>
+                        <h3>Compétence 6 : Collaborer</h3>
+                    </header>
+                </article>
                 <img class="logoflechedroite" src="./IMG/flechedroite.png"></img>
             </div>
         </div>
-        <div class="projet">
+        <div class="projet" id="projet2">
             <div class="frontprojet">
                 <h2>API REST pour une gestion d'article</h2>
                 <div style="border:solid 1px #679436;margin:15px 0px 15px 0px;height: 0px;"></div>
@@ -60,10 +66,16 @@
                     <li><span>Identifier les besoins d'un client</span></li>
                     <li><span>Refactoring</span></li>
                 </ul>
+                <article style="padding:5px;border-radius: 0px !important;border: solid 2px #E3CF00 !important;background:white;">
+                    <div style="background:#FFE90C;border:solid 3px #E3CF00;margin-bottom:3px;"></div>
+                    <header>
+                        <h3>Compétence 3 : Administrer</h3>
+                    </header>
+                </article>
                 <img class="logoflechedroite" src="./IMG/flechedroite.png"></img>
             </div>
         </div>
-        <div class="projet">
+        <div class="projet" id="projet3">
             <div class="frontprojet">
                 <h2>Application de messagerie instantannée</h2>
                 <div style="border:solid 1px #679436;margin:15px 0px 15px 0px;height: 0px;"></div>
@@ -86,10 +98,16 @@
                     <li><span>Codage intensif</span></li>
                     <li><span>Travail d'équipe</span></li>
                 </ul>
+                <article style="padding:5px;border-radius: 0px !important;border: solid 2px #BF1402 !important;background:white;">
+                    <div style="background:red;border:solid 3px #BF1402;margin-bottom:3px;"></div>
+                    <header>
+                        <h3>Compétence 1 : Réaliser</h3>
+                    </header>
+                </article>
                 <img class="logoflechedroite" src="./IMG/flechedroite.png"></img>
             </div>
         </div>
-        <div class="projet">
+        <div class="projet" id="projet4">
             <div class="frontprojet">
                 <h2>Application mobile de panneau solaire</h2>
                 <div style="border:solid 1px #679436;margin:15px 0px 15px 0px;height: 0px;"></div>
@@ -112,10 +130,16 @@
                     <li><span>Documentation</span></li>
                     <li><span>Conception et développement d'application mobile</span></li>
                 </ul>
+                <article style="padding:5px;border-radius: 0px !important;border: solid 2px #37B804 !important;background:white;">
+                    <div style="background:#41DE02;border:solid 3px #37B804;margin-bottom:3px;"></div>
+                    <header>
+                        <h3>Compétence 4 : Gérer</h3>
+                    </header>
+                </article>
                 <img class="logoflechedroite" src="./IMG/flechedroite.png"></img>
             </div>
         </div>
-        <div class="projet">
+        <div class="projet" id="projet5">
             <div class="frontprojet">
                 <h2>Algorithme génétique avec graphique</h2>
                 <div style="border:solid 1px #679436;margin:15px 0px 15px 0px;height: 0px;"></div>
@@ -138,10 +162,18 @@
                     <li><span>Autonomie</span></li>
                     <li><span>Conception et développement d'algorithme</span></li>
                 </ul>
+                <article style="padding:5px;border-radius: 0px !important;border: solid 2px #FF6800 !important;background:white;">
+                    <div style="background:#FF9348;border:solid 3px #FF6800;margin-bottom:3px;"></div>
+                    <header>
+                        <h3>Compétence 2 : Optimiser</h3>
+                    </header>
+                    <div class="content">
+                    </div>
+                </article>
                 <img class="logoflechedroite" src="./IMG/flechedroite.png"></img>
             </div>
         </div>
-        <div class="projet">
+        <div class="projet" id="projet6">
             <div class="frontprojet">
                 <h2>Mise en place d'un cahier des charges</h2>
                 <div style="border:solid 1px #679436;margin:15px 0px 15px 0px;height: 0px;"></div>
@@ -164,6 +196,12 @@
                     <li><span>Documentation</span></li>
                     <li><span>Conception d'un cahier des charges</span></li>
                 </ul>
+                <article style="padding:5px;border-radius: 0px !important;border: solid 2px #006EC4 !important;background:white;">
+                    <div style="background:#0085EE;border:solid 3px #006EC4;margin-bottom:3px;"></div>
+                    <header>
+                        <h3>Compétence 5 : Conduire</h3>
+                    </header>
+                </article>
                 <img class="logoflechedroite" src="./IMG/flechedroite.png"></img>
             </div>
         </div>
@@ -172,7 +210,6 @@
 <script>
     // Sélectionnez toutes les images avec la classe "logoflechedroite"
     var images = document.querySelectorAll('.logoflechedroite');
-
     // Pour chaque image sélectionnée, ajoutez un gestionnaire d'événement de clic
     images.forEach(function(image) {
         image.addEventListener('click', function() {
@@ -184,4 +221,19 @@
             projetParent.querySelector('.detailsprojet').classList.toggle('afficher');
         });
     });
+    // Récupérer le paramètre "projet" de l'URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const projetParam = urlParams.get('projet');
+
+    // Si le paramètre "projet" existe
+    if (projetParam) {
+        // Sélectionner la carte projet correspondante
+        const projet = document.getElementById("projet"+projetParam);
+
+        // Vérifier si la carte projet existe
+        if (projet) {
+            // Appliquer une bordure CSS à la carte projet
+            projet.style.border = "4px solid #679436"; // Vous pouvez ajuster la couleur et l'épaisseur de la bordure selon vos besoins
+        }
+    }
 </script>
